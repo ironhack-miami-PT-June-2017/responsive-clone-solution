@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import '_mixins-variables';
+@import '_header';
+@import '_main-content';
+@import '_box-app';
+@import '_right-side-box';
+@import '_viewport-md';
+@import '_viewport-sm';
+@import '_viewport-xs';
+
+// General
+a {
+  color: $color-text;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(.2s);
+    color: $color-primary;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-subscribe,
+.btn-download-kitty {
+  @include border-radius(3px);
+  background: $color-primary;
+  border: 1px solid $color-primary;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 15px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #ea522a;
+  }
+}
+
+// Main page
+body {
+  background: $color-background;
+  color: $color-text;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

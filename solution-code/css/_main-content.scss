@@ -1,0 +1,48 @@
+.main-content {
+  margin: 30px auto;
+  width: $width-wrapper;
+
+  .left-section {
+    float: left;
+    width: 74%;
+  }
+
+  .right-section {
+    float: right;
+    width: 24.5%;
+  }
+
+  .box {
+    @include box-content(100%);
+
+    &.subscribe-section {
+      padding: 10px 15px 15px;
+
+      form {
+        display: inline-block;
+      }
+    }
+
+    strong {
+      color: $color-black;
+      display: inline-block;
+      font-weight: 500;
+      margin: 0 5px;
+    }
+  }
+
+  .txt-subscribe {
+    @include txt-input(200px);
+    margin-left: 15px;
+  }
+
+  .close {
+    cursor: pointer;
+    float: right;
+    margin: 16px 5px 0 0;
+
+    img {
+      height: 14px;
+    }
+  }
+}
